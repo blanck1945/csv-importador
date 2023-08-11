@@ -8,8 +8,13 @@ import AddStockModal from "../components/Modals/AddStockModal";
 import ModalTitle from "../components/Modals/elements/ModalTitle";
 import AddStockForm from "../components/Forms/AddStockForm";
 import { useStocksStore } from "../store/stocks.store";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const navigate = useRouter();
+
+  navigate.push("/csv");
+
   const showAddForm = useUiStore((state: any) => state.showAddForm);
   const singleStock = useStocksStore((state: any) => state.singleStock);
 
