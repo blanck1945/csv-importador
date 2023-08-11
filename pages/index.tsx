@@ -8,7 +8,7 @@ import AddStockModal from "../components/Modals/AddStockModal";
 import ModalTitle from "../components/Modals/elements/ModalTitle";
 import AddStockForm from "../components/Forms/AddStockForm";
 import { useStocksStore } from "../store/stocks.store";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const navigate = useRouter();
